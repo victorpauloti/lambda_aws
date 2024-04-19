@@ -23,7 +23,7 @@ variable "default_tags" {
   type = map(string)
 
   default = {
-    "Projeto"   = "INFRA AS A CODE - lambda"
+    "Projeto"   = "INFRA AS A CODE - LAMBDA"
     "Empresa"   = "VPAULO.COM"
     "Create by" = "Terraform Cloud"
     "Contato"   = "contato@vpaulo.com"
