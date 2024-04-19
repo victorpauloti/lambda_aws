@@ -11,6 +11,7 @@ variable "function_name" {
 }
 variable "role_name" {
   type = string
+  default = "iam_role_lambda"
   
 }
 variable "handler" {
