@@ -4,14 +4,18 @@ variable "region" {
   type    = string
 }
 
-variable "s3_bucket_name" {
-  default = "bucket-mei"
+variable "function_name" {
+  default = "lambda_function_name"
   type = string
   
 }
-variable "iam_policy_name" {
+variable "role_name" {
   type = string
-  default = "guardrail_chatbot_policy_mei"
+  
+}
+variable "handler" {
+  type = string
+  default = "lambda_function.lambda_handler"
   
 }
 variable "iam_policy_role_name" {
@@ -19,11 +23,7 @@ variable "iam_policy_role_name" {
   default = "policy-chatbot-mei"
   
 }
-variable "role_name" {
-  type = string
-  default = "role-chatbot-mei"
-  
-}
+
 variable "default_tags" {
   type = map(string)
 
