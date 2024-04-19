@@ -18,11 +18,6 @@ variable "handler" {
   default = "lambda_function.lambda_handler"
   
 }
-variable "iam_policy_role_name" {
-  type = string
-  default = "policy-chatbot-mei"
-  
-}
 
 variable "default_tags" {
   type = map(string)
