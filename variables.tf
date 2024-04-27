@@ -11,6 +11,7 @@ variable "function_name" {
 }
 variable "role_name" {
   type = string
+  default = "iam_role_lambda"
   
 }
 variable "handler" {
@@ -23,7 +24,7 @@ variable "default_tags" {
   type = map(string)
 
   default = {
-    "Projeto"   = "INFRA AS A CODE - lambda"
+    "Projeto"   = "INFRA AS A CODE - LAMBDA"
     "Empresa"   = "VPAULO.COM"
     "Create by" = "Terraform Cloud"
     "Contato"   = "contato@vpaulo.com"
