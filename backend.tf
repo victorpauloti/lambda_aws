@@ -5,7 +5,7 @@ terraform {
 
     # The name of the Terraform Cloud workspace to store Terraform state files in.
     workspaces {
-      name = "VPAULO_COM_MEI"
+      name = "terraform"
     }
   }
 }
