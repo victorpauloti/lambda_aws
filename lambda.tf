@@ -12,7 +12,7 @@ resource "aws_lambda_function" "test_lambda" {
 
   environment {
     variables = {
-      foo = "bar"
+      variable = "one"
     }
   }
   tags = var.default_tags
